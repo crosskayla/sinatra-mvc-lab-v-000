@@ -15,7 +15,7 @@ class PigLatinizer
     @piglatinized_text = text
   end
 
-  def piglatinizer
+  def analyze
     new_phrase = []
     words = @piglatinized_text.split('')
     words.each do |word|
