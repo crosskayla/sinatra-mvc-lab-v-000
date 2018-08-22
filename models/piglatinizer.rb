@@ -29,9 +29,7 @@ class PigLatinizer
     end
 
     new_phrase.join(" ")
-    
-    binding.pry
-    
+
   end
 
 end
