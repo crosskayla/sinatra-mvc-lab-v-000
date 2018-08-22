@@ -9,4 +9,5 @@ class App < Sinatra::Base
   post '/' do
     @piglatinized_text = params[:user_text]
     erb :output
+  end
 end
