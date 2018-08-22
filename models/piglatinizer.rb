@@ -1,3 +1,5 @@
+require 'pry'
+
 class PigLatinizer
 
   attr_accessor :piglatinized_text
@@ -23,7 +25,9 @@ class PigLatinizer
         new_phrase >> word[2..-1] + word[0..1] + @@appender
       elsif @@CONSTANT_3L_CONSONANTS.include?(word[0..2])
         new_phrase >> word[2..-1] + word[0..1] + @@appender
+      end
     end
+    
   end
 
 end
