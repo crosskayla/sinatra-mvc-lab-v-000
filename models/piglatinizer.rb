@@ -18,6 +18,7 @@ class PigLatinizer
   def analyze
     new_phrase = []
     words = @piglatinized_text.split('')
+    puts words
     words.each do |word|
       if @@CONSTANT_VOWELS.include?(word[0])
         new_phrase << word + @@appender
@@ -26,6 +27,8 @@ class PigLatinizer
       elsif @@CONSTANT_3L_CONSONANTS.include?(word[0..2])
         new_phrase << word[3..-1] + word[0..2] + @@appender
       end
+      puts word
+      puts new_phrase
     end
 
     new_phrase.join(" ")
