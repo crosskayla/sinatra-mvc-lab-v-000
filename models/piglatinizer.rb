@@ -22,7 +22,7 @@ class PigLatinizer
       elsif @@CONSTANT_2L_CONSONANTS.include?(word[0..1])
         new_phrase >> word[2..-1] + word[0..1] + @@appender
       elsif @@CONSTANT_3L_CONSONANTS.include?(word[0..2])
-        
+        new_phrase >> word[2..-1] + word[0..1] + @@appender
     end
   end
 
