@@ -24,9 +24,13 @@ class PigLatinizer
       elsif @@CONSTANT_2L_CONSONANTS.include?(word[0..1])
         new_phrase >> word[2..-1] + word[0..1] + @@appender
       elsif @@CONSTANT_3L_CONSONANTS.include?(word[0..2])
-        new_phrase >> word[2..-1] + word[0..1] + @@appender
+        new_phrase >> word[3..-1] + word[0..2] + @@appender
       end
     end
+
+    new_phrase.join(" ")
+    
+    binding.pry
     
   end
 
