@@ -12,7 +12,7 @@ class PigLatinizer
   @@appender = "ay"
 
   def initialize
-
+    "RETURN"
   end
 
   def piglatinize(text)
