@@ -1,6 +1,6 @@
 class PigLatinizer
 
-  attr_accessor :text
+  attr_accessor :piglatinized_text
 
   @@CONSTANT_CONSONANTS = ['bl', 'br', 'ch', 'cl', 'cr', 'dr', 'fl', 'fr', 'gl', 'gr', 'pl', 'pr', 'sc',
                           'sh', 'sk', 'sl', 'sm', 'sn', 'sp', 'st', 'sw', 'th', 'tr', 'tw', 'wh', 'wr',
@@ -9,6 +9,10 @@ class PigLatinizer
 
   def initialize(text)
     @piglatinized_text = text
+  end
+
+  def piglatinizer
+    @pig
   end
 
 end
