@@ -11,7 +11,7 @@ class PigLatinizer
 
   @@appender = "ay"
 
-  def initialize(text)
+  def initialize(text="")
     @piglatinized_text = text
   end
 
