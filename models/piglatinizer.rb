@@ -12,12 +12,12 @@ class PigLatinizer
   @@appender = "ay"
 
   def initialize(text="")
-    @piglatinized_text = text
+    @input_text = text
   end
 
   def piglatinize
     new_phrase = []
-    words = @piglatinized_text.split(" ")
+    words = @input_text.split(" ")
     words.each do |word|
       if @@CONSTANT_VOWELS.include?(word[0].downcase)
         new_phrase << word + 'w' + @@appender
@@ -30,7 +30,7 @@ class PigLatinizer
       end
     end
 
-    new_phrase.join(" ")
+    if words.size >1 ? new_phrase.join(" ") : new_phrase
 
   end
 
