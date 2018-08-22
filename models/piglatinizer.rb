@@ -20,7 +20,7 @@ class PigLatinizer
     words = @piglatinized_text.split(" ")
     words.each do |word|
       if @@CONSTANT_VOWELS.include?(word[0].downcase)
-        new_phrase << word + @@appender
+        new_phrase << word + 'w' + @@appender
       elsif @@CONSTANT_2L_CONSONANTS.include?(word[0..1].downcase)
         new_phrase << word[2..-1] + word[0..1] + @@appender
       elsif @@CONSTANT_3L_CONSONANTS.include?(word[0..2].downcase)
