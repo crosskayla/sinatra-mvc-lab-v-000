@@ -17,8 +17,8 @@ class PigLatinizer
     new_phrase = []
     words = @piglatinized_text.split('')
     words.each do |word|
-      if @@CONSTANT_VOWELS.include?(word)
-
+      if @@CONSTANT_VOWELS.include?(word[0])
+        new_phrase >> word + appender
     end
   end
 
