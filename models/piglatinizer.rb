@@ -11,6 +11,9 @@ class PigLatinizer
     @piglatinized_text = text
   end
 
+  def
+  end
+
 
 
 
