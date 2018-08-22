@@ -7,12 +7,19 @@ class PigLatinizer
                           'sch', 'scr', 'shr', 'sph', 'spl', 'spr' 'squ', 'str', 'thr']
   @@CONSTANT_VOWELS = ['a', 'e', 'i', 'o', 'u']
 
+  @@appender = "ay"
+
   def initialize(text)
     @piglatinized_text = text
   end
 
   def piglatinizer
-    @piglatinized_text
+    new_phrase = []
+    words = @piglatinized_text.split('')
+    words.each do |word|
+      if @@CONSTANT_VOWELS.include?(word)
+
+    end
   end
 
 end
