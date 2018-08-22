@@ -25,11 +25,9 @@ class PigLatinizer
         new_phrase << word[2..-1] + word[0..1] + @@appender
       elsif @@CONSTANT_3L_CONSONANTS.include?(word[0..2])
         new_phrase << word[3..-1] + word[0..2] + @@appender
-      else 
+      else
         new_phrase << word[1..-1] + word[0] + @@appender
       end
-      puts word
-      puts new_phrase
     end
 
     new_phrase.join(" ")
