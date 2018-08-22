@@ -6,4 +6,7 @@ class App < Sinatra::Base
     erb :user_input
   end
 
+  post '/' do
+    @piglatinized_text = params[:user_text]
+
 end
