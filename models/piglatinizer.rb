@@ -17,7 +17,7 @@ class PigLatinizer
 
   def analyze
     new_phrase = []
-    words = @piglatinized_text.split('')
+    words = @piglatinized_text.split(" ")
     puts words
     words.each do |word|
       if @@CONSTANT_VOWELS.include?(word[0])
