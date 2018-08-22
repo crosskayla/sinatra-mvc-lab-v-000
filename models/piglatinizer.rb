@@ -2,9 +2,9 @@ class PigLatinizer
 
   attr_accessor :piglatinized_text
 
-  @@CONSTANT_CONSONANTS = ['bl', 'br', 'ch', 'cl', 'cr', 'dr', 'fl', 'fr', 'gl', 'gr', 'pl', 'pr', 'sc',
-                          'sh', 'sk', 'sl', 'sm', 'sn', 'sp', 'st', 'sw', 'th', 'tr', 'tw', 'wh', 'wr',
-                          'sch', 'scr', 'shr', 'sph', 'spl', 'spr' 'squ', 'str', 'thr']
+  @@CONSTANT_2L_CONSONANTS = ['bl', 'br', 'ch', 'cl', 'cr', 'dr', 'fl', 'fr', 'gl', 'gr', 'pl', 'pr', 'sc',
+                          'sh', 'sk', 'sl', 'sm', 'sn', 'sp', 'st', 'sw', 'th', 'tr', 'tw', 'wh', 'wr']
+  @@CONSTANT_3L_CONSONANTS = ['sch', 'scr', 'shr', 'sph', 'spl', 'spr' 'squ', 'str', 'thr']
   @@CONSTANT_VOWELS = ['a', 'e', 'i', 'o', 'u']
 
   @@appender = "ay"
@@ -19,6 +19,7 @@ class PigLatinizer
     words.each do |word|
       if @@CONSTANT_VOWELS.include?(word[0])
         new_phrase >> word + appender
+      elsif
     end
   end
 
