@@ -31,7 +31,7 @@ class PigLatinizer
       end
     end
 
-    words.size >1 ? new_phrase.join(" ") : new_phrase
+    words.size >1 ? new_phrase.join(" ") : new_phrase[0]
 
   end
 
