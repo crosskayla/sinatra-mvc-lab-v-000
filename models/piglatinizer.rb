@@ -12,7 +12,7 @@ class PigLatinizer
   end
 
   def piglatinizer
-    @pig
+    @piglatinized_text
   end
 
 end
