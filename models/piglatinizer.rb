@@ -26,8 +26,8 @@ class PigLatinizer
       elsif @@CONSTANT_3L_CONSONANTS.include?(word[0..2])
         new_phrase << word[3..-1] + word[0..2] + @@appender
       end
-      puts "ORIGINAL WORD: " word
-      puts "NEW WORD: " new_phrase.last
+      puts "ORIGINAL WORD: " + word
+      puts "NEW WORD: " + new_phrase.last
     end
 
     new_phrase.join(" ")
