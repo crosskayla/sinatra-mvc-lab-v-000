@@ -20,11 +20,11 @@ class PigLatinizer
     words = @piglatinized_text.split('')
     words.each do |word|
       if @@CONSTANT_VOWELS.include?(word[0])
-        new_phrase >> word + @@appender
+        new_phrase << word + @@appender
       elsif @@CONSTANT_2L_CONSONANTS.include?(word[0..1])
-        new_phrase >> word[2..-1] + word[0..1] + @@appender
+        new_phrase << word[2..-1] + word[0..1] + @@appender
       elsif @@CONSTANT_3L_CONSONANTS.include?(word[0..2])
-        new_phrase >> word[3..-1] + word[0..2] + @@appender
+        new_phrase << word[3..-1] + word[0..2] + @@appender
       end
     end
 
