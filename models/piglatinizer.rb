@@ -11,12 +11,12 @@ class PigLatinizer
 
   @@appender = "ay"
 
-  def initialize(text="")
-    @input_text = text
+  def initialize
+
   end
 
   def piglatinize(text)
-    @input_text = text if text
+    @input_text = text
     new_phrase = []
     words = @input_text.split(" ")
     words.each do |word|
